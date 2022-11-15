@@ -4,25 +4,30 @@
 //la etiqueta que quiero controlar
 let etiquetaImagen=document.getElementById("fotografia")
 
-//controlando nuestras etiquetas
+let etiquetaAudio = document.getElementById("audio")
 
-// controlar es cambiar la fuente (src) de una etiqueta
-etiquetaImagen.src="./img/dragonball2.png"
+let etiquetaMenu = document.getElementById("menuu")
 
-//controlar es cambiar el contenido de texto de una etiqueta
 let etiquetaTitulo=document.getElementById("titulo")
-etiquetaTitulo.textContent="HISTORIA"
 
-//controlar es agregar estilos
-etiquetaTitulo.classList.add("fuente","alineado")
+let etiquetaTituloPrincipal = document.getElementById("titulo-principal")
 
-//controlar es remover estilos
 let etiquetaParrafo=document.getElementById("parrafo")
-etiquetaParrafo.classList.remove("text-danger")
 
-//controlar es detectar eventos
+let etiquetaBody = document.getElementById("body_")
+
 let etiquetaBoton = document.getElementById("boton")
 etiquetaBoton.addEventListener("click",function(evento){
-    alert("estamos haciendo clic")
+
+    etiquetaTitulo.textContent="DRAGON BALL SUPER"
+    etiquetaTituloPrincipal.textContent="HISTORIA"
+    etiquetaParrafo.textContent="Dragon Ball Super (ドラゴンボール超スーパー Doragon Bōru Sūpā?) es una serie de manga japonesa escrita por Akira Toriyama e ilustrada por Toyotarō. Se trata de una secuela del manga original de Dragon Ball de Toriyama, que sigue las aventuras de Goku y sus amigos durante el lapso de diez años tras la derrota de Majin Boo. Comenzó a serializarse en la revista V Jump de Shūeisha el 20 de junio de 2015.Una adaptación televisiva al anime de 131 episodios fue producida por Toei Animation y se emitió en Japón desde el 5 de julio de 2015 hasta el 25 de marzo de 2018. Una película secuela, Dragon Ball Super: Broly, se estrenó el 14 de diciembre de 2018 y se convirtió en la película de anime más taquillera de la franquicia. Una segunda película, Super Hero, se estrenó en cines nipones el 11 de junio de 2022."
+    etiquetaImagen.src="./img/dragonball2.png"
+    etiquetaAudio.src="./audio/audio2.mp3"
+    etiquetaTitulo.classList.add("fuente","alineado")
+    etiquetaParrafo.classList.remove("text-danger")
+    etiquetaMenu.classList.add("menuu")
+    etiquetaBody.classList.add("body_")
+
 })
 

@@ -4,10 +4,24 @@
 
 .fuente{
     color: red;
+    
 }
 
-.alineado{
-    text-align: center;
-    font-size: 38px;
+.body_1{
+    background-color: aqua;
 }
+
+.body_{
+    background-color: blue;
+}
+
+.menuu{
+    background-color: aquamarine;
+}
+
+
+
+
+
+
 
